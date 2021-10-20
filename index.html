@@ -6,7 +6,7 @@
         <meta content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes" name="viewport"/>
         <link href="resources/images/logo.ico" id="favicon" rel="shortcut icon" type="image/x-icon"/>
         <title>
-            MagnusBilling
+            CyberBilling
         </title>
         <script src="locale.js">
         </script>
@@ -33,7 +33,7 @@
 <div id="loading">
     <div class="loading-indicator">
         <div style="text-align:center">
-            <img id="loadinggif" src="resources/images/loading.gif" style="vertical-align:top;" width="90px"/>
+            <img id="loadinggif" src="resources/images/loadingc.gif" style="vertical-align:top;" width="130px"/>
             <br/>
             <span id="name-system">
             </span>
@@ -67,7 +67,7 @@
         if (window.agentTitle) {
             document.getElementById('name-system').innerHTML = window.agentTitle;
         }else{
-            document.getElementById('name-system').innerHTML = t('MagnusBilling System'); 
+            document.getElementById('name-system').innerHTML = t('CyberBilling System'); 
         }
     
         document.getElementById('text-msg').innerHTML = 'Voip System';
@@ -101,4 +101,38 @@
 <script data-app="69eb1359-905e-4f4c-9e1e-2841e3ec1bda" id="microloader" src="bootstrap.js" type="text/javascript">
 </script>
 <body>
+    
+    <!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "542428785870734", // Facebook page ID
+            whatsapp: "+38345657657", // WhatsApp number
+            viber: "+38345657657", // Viber number
+            telegram: "38345657657", // Telegram bot username
+            instagram: "voip_kosova", // Instagram username
+            company_logo_url: "//storage.getbutton.io/widget/05/05c5/05c58f535109d770837aa189cfc63bc8/logo.jpg", // URL of company logo (png, jpg, gif)
+            greeting_message: "Hello, how may we help you? Just send us a message now to get assistance.", // Text of greeting message
+            call_to_action: "We are Here", // Call to action
+            button_color: "#129BF4", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "viber,whatsapp,facebook,telegram,instagram", // Order of buttons
+            ga: true, // Google Analytics enabled
+            branding: false, // Show branding string
+            mobile: true, // Mobile version enabled
+            desktop: true, // Desktop version enabled
+            greeting: false, // Greeting message enabled
+            shift_vertical: 5, // Vertical position, px
+            shift_horizontal: 5, // Horizontal position, px
+            domain: "cyberbilling.me", // site domain
+            key: "XG8uYlo0Roma88bv3neazQ", // pro-widget key
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+    
 </body>
